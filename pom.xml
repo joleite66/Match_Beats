@@ -180,8 +180,8 @@
                     <url>http://localhost:8080/manager/text</url>
                     <server>tomcat</server>
                     <path>/matchBeats</path>
-                    <username>maven</username>
-                    <password>maven</password>
+                    <username>pedro</username>
+                    <password>pedro</password>
                 </configuration>
             </plugin>
 
