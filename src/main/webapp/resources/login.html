@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<head>
+<head xmlns:th="http://www.w3.org/1999/xhtml">
+
+
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +12,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Au Register Forms by Colorlib</title>
+    <title>Match Beats</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -23,10 +25,13 @@
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="css/main.css" rel="stylesheet" media="all">
+    <link th:href="@{/Users/codecadet/Desktop/matchBeats/src/main/webapp/resources/css/main.css}" href="css/main.css" rel="stylesheet" media="all">
+
+
 </head>
 
 <body>
+
     <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
@@ -41,9 +46,9 @@
                             <input class="input--style-3" type="email" placeholder="Password" name="Password">
                         </div>
                             <button class="btn btn--pill btn--green" type="submit"><a href = "index.html"></a>Login</button>
-                            <h4>Don´t have an account? <a href="register.html">Sign up </a></h3>
-                        </div>
-                       
+                            <h4>Don´t have an account? <a href="register.html">Sign up </a></h4>
+
+
                     </form>
                 </div>
             </div>

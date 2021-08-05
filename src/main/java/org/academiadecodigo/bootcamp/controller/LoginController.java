@@ -3,10 +3,13 @@ package org.academiadecodigo.bootcamp.controller;
 import org.academiadecodigo.bootcamp.services.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+
 
 @Controller
 public class LoginController {
@@ -18,9 +21,10 @@ public class LoginController {
         this.loginService = loginService;
     }
 
+
     @RequestMapping(method = RequestMethod.GET, path = {"/login", "/",""})
     public String showLogin() {
-        return ""; //return login view;
+        return "login.html"; //return login view;
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/login/{username}/{password}"})
