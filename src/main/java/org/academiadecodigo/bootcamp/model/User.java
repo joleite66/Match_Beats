@@ -1,8 +1,7 @@
-package org.academiadecodigo.bootcamp.persistance.model;
+package org.academiadecodigo.bootcamp.model;
 
 import org.academiadecodigo.bootcamp.manager.UserManager;
-import org.academiadecodigo.bootcamp.services.ServiceMatcher;
-import org.academiadecodigo.bootcamp.services.ServiceUser;
+import org.academiadecodigo.bootcamp.services.UserService;
 import org.academiadecodigo.bootcamp.utils.genderEnum;
 
 import java.util.ArrayList;
@@ -26,8 +25,8 @@ public class User {
     private List<Integer> likedIDs = new ArrayList<>();
 
     private boolean isLogin;
-    private UserManager userManager;
-    private ServiceUser serviceUser;
+
+    private UserService userService;
 
     //photo link
 
@@ -142,12 +141,12 @@ public class User {
         this.userManager = userManager;
     }
 
-    public ServiceUser getServiceUser() {
-        return serviceUser;
+    public UserService getServiceUser() {
+        return userService;
     }
 
-    public void setServiceUser(ServiceUser serviceUser) {
-        this.serviceUser = serviceUser;
+    public void setServiceUser(UserService userService) {
+        this.userService = userService;
     }
 
     @Override

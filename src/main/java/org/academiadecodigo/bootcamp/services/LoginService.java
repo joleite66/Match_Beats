@@ -1,10 +1,12 @@
 package org.academiadecodigo.bootcamp.services;
 
 import org.academiadecodigo.bootcamp.Bootstrap;
-import org.academiadecodigo.bootcamp.persistance.model.User;
+import org.academiadecodigo.bootcamp.model.User;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class LoginService {
 
     private Bootstrap bootstrap;
