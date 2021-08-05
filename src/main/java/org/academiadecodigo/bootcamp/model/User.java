@@ -1,8 +1,6 @@
 package org.academiadecodigo.bootcamp.model;
 
-import org.academiadecodigo.bootcamp.manager.UserManager;
 import org.academiadecodigo.bootcamp.services.UserService;
-import org.academiadecodigo.bootcamp.utils.genderEnum;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,22 +12,22 @@ public class User {
     private String password;
     private String firstName;
     private String lastName;
-    private genderEnum gender;
-    private Integer age;
     private Integer musicExp;
     private String instrument;
     private String aboutMe;
-    private Matcher matcher;
+    private int phone;
+    private String email;
+
     private List<String> favouriteMusicians = new ArrayList<>();
     private List<String> musicGenre = new ArrayList<>();
     private List<Integer> likedIDs = new ArrayList<>();
 
+    private Matcher matcher;
     private boolean isLogin;
 
     private UserService userService;
 
     //photo link
-
 
 
     public int getId() {
@@ -72,22 +70,6 @@ public class User {
         this.lastName = lastName;
     }
 
-    public genderEnum getGender() {
-        return gender;
-    }
-
-    public void setGender(genderEnum gender) {
-        this.gender = gender;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
     public Integer getMusicExp() {
         return musicExp;
     }
@@ -112,6 +94,22 @@ public class User {
         this.aboutMe = aboutMe;
     }
 
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public Matcher getMatcher() {
         return matcher;
     }
@@ -124,29 +122,24 @@ public class User {
         return favouriteMusicians;
     }
 
+    public void setFavouriteMusicians(List<String> favouriteMusicians) {
+        this.favouriteMusicians = favouriteMusicians;
+    }
+
     public List<String> getMusicGenre() {
         return musicGenre;
+    }
+
+    public void setMusicGenre(List<String> musicGenre) {
+        this.musicGenre = musicGenre;
     }
 
     public List<Integer> getLikedIDs() {
         return likedIDs;
     }
 
-
-    public UserManager getUserManager() {
-        return userManager;
-    }
-
-    public void setUserManager(UserManager userManager) {
-        this.userManager = userManager;
-    }
-
-    public UserService getServiceUser() {
-        return userService;
-    }
-
-    public void setServiceUser(UserService userService) {
-        this.userService = userService;
+    public void setLikedIDs(List<Integer> likedIDs) {
+        this.likedIDs = likedIDs;
     }
 
     @Override
@@ -157,15 +150,15 @@ public class User {
                 ", password='" + password + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", gender=" + gender +
-                ", age=" + age +
                 ", musicExp=" + musicExp +
                 ", instrument='" + instrument + '\'' +
                 ", aboutMe='" + aboutMe + '\'' +
-                ", matcher=" + matcher +
+                ", phone=" + phone +
+                ", email='" + email + '\'' +
                 ", favouriteMusicians=" + favouriteMusicians +
                 ", musicGenre=" + musicGenre +
                 ", likedIDs=" + likedIDs +
                 '}';
     }
+
 }

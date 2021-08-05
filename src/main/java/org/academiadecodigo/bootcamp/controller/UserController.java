@@ -36,7 +36,7 @@ public class UserController {
 
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = {"/", ""}, )
+    @RequestMapping(method = RequestMethod.POST, path = {"/", ""} )
     public String saveUser(@Valid @ModelAttribute("user") User user, RedirectAttributes redirectAttributes, BindingResult bindingResult) {
 
         userService.getUsers().add(user);
@@ -44,7 +44,6 @@ public class UserController {
         return "redirect:index/";
 
     }
-
 
 
 

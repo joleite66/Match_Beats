@@ -1,7 +1,6 @@
 package org.academiadecodigo.bootcamp;
 
 import org.academiadecodigo.bootcamp.model.User;
-import org.academiadecodigo.bootcamp.utils.genderEnum;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,10 +26,8 @@ public class Bootstrap {
         user.setId(1);
         user.setUserName("Daniel");
         user.setPassword("ola");
-        user.setGender(genderEnum.M);
         user.setFirstName("Daniel");
         user.setLastName("igreja");
-        user.setAge(27);
         user.setMusicExp(10);
         user.setInstrument("flauta");
         user.setAboutMe("ok eu toco bem");
@@ -42,10 +39,8 @@ public class Bootstrap {
         user1.setId(2);
         user1.setUserName("Daniel");
         user1.setPassword("ola");
-        user1.setGender(genderEnum.M);
         user1.setFirstName("Daniel");
         user1.setLastName("igreja");
-        user1.setAge(27);
         user1.setMusicExp(10);
         user1.setInstrument("flauta");
         user1.setAboutMe("ok eu toco bem");

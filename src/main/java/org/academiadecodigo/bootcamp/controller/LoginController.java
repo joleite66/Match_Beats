@@ -33,13 +33,5 @@ public class LoginController {
     }
 
 
-    public void logout(){
-        //return login view
-    }
-
-
-    //ligaç\ao do user a partir de um link
-
-
 
 }
