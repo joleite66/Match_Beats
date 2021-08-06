@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<thymeleaf th:replace="header :: header"> </thymeleaf>
+
+
+<head xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <thymeleaf xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+               th:fragment="header" th:remove="tag">
+
+        <title>MatchBeats</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" modelType="text/css"/>
+        <script modelType="application/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script modelType="application/javascript" async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </thymeleaf>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <link href="http://localhost:8080/matchBeats/resources/css/main.css" rel="stylesheet" media="all">
+
+    <!-- Title Page-->
+    <title>Match Beats</title>
+
+
+    <!-- Main CSS-->
+
+</head>
+
+<body>
+<div class="container">
+    <img src="img/matchtitle.png" style="margin-left: 300px">
+    <img src="img/musicalnote.png" style="margin-left: 390px" width="40%" margin-top="100px">
+</div>
+
+<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w780">
+
+
+        <div class="card-body ">
+            <h1 class="title" style="justify-items:center"></h1>
+            <form method="POST"/>
+
+            <div class="input-group">
+                <a class="input--style-3" style="font-size: 300%" placeholder="First Name" name="name">First name: Sara</a>
+            </div>
+
+            <div class="input-group">
+                <a class="input--style-3" style="font-size: 300%" type="text" placeholder="Last Name" name="Email">Last name: Lopes</a>
+            </div>
+
+            <div class="input-group">
+                <a class="input--style-3" style="font-size: 300%" type="text" placeholder="Last Name" name="Instrument">Phone: 912376524</a>
+            </div>
+
+            <scan class="red-buttons">
+                <div class="p-t-10">
+                    <a href="teste2.html">
+                    <button class="btn btn--pill btn--red" type="submit"
+                            style="background-color:  rgb(255, 11, 11);"> Return
+                    </button></a>
+                </div>
+            </scan>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<thymeleaf th:replace="header :: header"> </thymeleaf>
+
+
+<head xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <thymeleaf xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+               th:fragment="header" th:remove="tag">
+
+        <title>MatchBeats</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" modelType="text/css"/>
+        <script modelType="application/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script modelType="application/javascript" async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </thymeleaf>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <link href="http://localhost:8080/matchBeats/resources/css/main.css" rel="stylesheet" media="all">
+
+    <!-- Title Page-->
+    <title>Match Beats</title>
+
+
+    <!-- Main CSS-->
+
+</head>
+
+<body>
+
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading">
+
+                </div>
+                <div class="card-body">
+                    <h2 class="title">Match Beats</h2>
+                    <form th:object="${user}" th:action="@{/login}" method="post">
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Username" th:field="*{userName}" name="Username">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Password" th:field="*{password}" name="Password">
+                        </div>
+                            <button class="btn btn--pill btn--green" type="submit"><a href = ""></a>Login</button>
+                            <h4> Don´t have an account? <a href="http://localhost:8080/matchBeats/resources/register.html">Sign up</a></h4>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- end document-->

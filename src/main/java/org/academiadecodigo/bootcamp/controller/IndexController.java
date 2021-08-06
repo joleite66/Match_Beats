@@ -37,7 +37,7 @@ public class IndexController {
 
         }*/
 
-        int num = ((int) (Math.random() * 3) +1);
+        int num = ((int) (Math.random() * 3));
 
 
         model.addAttribute("user",userService.getUsers().get(num));

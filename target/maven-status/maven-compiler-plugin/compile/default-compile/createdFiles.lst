@@ -1,0 +1,11 @@
+org/academiadecodigo/bootcamp/services/LoginService.class
+org/academiadecodigo/bootcamp/controller/IndexController.class
+org/academiadecodigo/bootcamp/controller/RegisterController.class
+org/academiadecodigo/bootcamp/controller/UserController.class
+org/academiadecodigo/bootcamp/controller/LoginController.class
+org/academiadecodigo/bootcamp/model/User.class
+org/academiadecodigo/bootcamp/mainTest/Main.class
+org/academiadecodigo/bootcamp/services/UserService.class
+org/academiadecodigo/bootcamp/services/MatcherService.class
+org/academiadecodigo/bootcamp/model/Matcher.class
+org/academiadecodigo/bootcamp/Bootstrap.class
