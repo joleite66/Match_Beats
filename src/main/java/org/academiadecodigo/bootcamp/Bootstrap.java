@@ -33,7 +33,7 @@ public class Bootstrap {
         User user11 = new User();
         User user12 = new User();
 
-        user1.setUserFoto("https://pixabay.com/get/gbdf221728c4a9e3e1cb550f80da8e77730438fbffa48839f05207a7f2d3e71d5bad07cfc92ecdb31ebccf0d4095b98b4_640.jpg");
+        user1.setUserFoto("https://i.imgur.com/oZY7vCA.jpg");
         user1.setId(1);
         user1.setUserName("MCSara");
         user1.setPassword("codecadet");
@@ -46,20 +46,20 @@ public class Bootstrap {
         user1.setMusicGenre("Alternative");
 
 
-        user2.setUserFoto("https://pixabay.com/get/gcefc4dd7bf8d6db8e81fbc85a5e66864837c0e807dc239ea9df9d62d288d4d48607512ed4335fba8292000c85a19436e_640.jpg");
+        user2.setUserFoto("https://i.imgur.com/QPizvni.jpg");
         user2.setId(2);
         user2.setUserName("joleite");
         user2.setPassword("helloworld");
         user2.setFirstName("Daniel");
         user2.setLastName("igreja");
         user2.setMusicExp(3);
-        user2.setInstrument("Maraca");
+        user2.setInstrument("gaita");
         user2.setAboutMe("I love playing maraca with friends");
         user2.setFavouriteMusicians("Madona");
         user2.setMusicGenre("Jazz");
 
 
-        user3.setUserFoto("https://pixabay.com/get/gd64e5d34960598b5ae734c54fe3fb4d3d26a6499888c499de6b0029a3faa2e018ee34e7daefcd42b8028e0392d7c0af7_640.jpg");
+        user3.setUserFoto("https://i.imgur.com/dZqFhTH.jpg");
         user3.setId(3);
         user3.setUserName("mysexycat");
         user3.setPassword("sexybody");
@@ -71,7 +71,7 @@ public class Bootstrap {
         user3.setFavouriteMusicians("Elton Jonh");
         user3.setMusicGenre("Country");
 
-        user4.setUserFoto("https://pixabay.com/get/g71ee88903dfb95c1d61c3ad8e8cb596577cfea2c1153fb47ba2ad7c527c3360c8eacd3f181d647736518a5e9bf5a28fc_640.jpg");
+        user4.setUserFoto("https://i.imgur.com/yJrUedd.jpg");
         user4.setId(4);
         user4.setUserName("goodlife");
         user4.setPassword("love");
@@ -84,7 +84,7 @@ public class Bootstrap {
         user4.setMusicGenre("Rock");
 
 
-        user5.setUserFoto("");
+        user5.setUserFoto("https://i.imgur.com/edhgNXX.jpg");
         user5.setId(5);
         user5.setUserName("user5");
         user5.setPassword("user5");
@@ -97,7 +97,7 @@ public class Bootstrap {
         user5.setMusicGenre("Rock");
 
 
-        user6.setUserFoto("");
+        user6.setUserFoto("https://i.imgur.com/mP6zNEb.jpg");
         user6.setId(8);
         user6.setUserName("user6");
         user6.setPassword("user6");
@@ -109,19 +109,19 @@ public class Bootstrap {
         user6.setFavouriteMusicians("U2");
         user6.setMusicGenre("Pop-Rock");
 
-        user7.setUserFoto("");
+        user7.setUserFoto("https://i.imgur.com/x7Io7gH.jpg");
         user7.setId(7);
         user7.setUserName("user7");
         user7.setPassword("user7");
         user7.setFirstName("Stevenson");
         user7.setLastName("Mendonça");
         user7.setMusicExp(5);
-        user7.setInstrument("Tambor");
+        user7.setInstrument("Cavaquinho");
         user7.setAboutMe("Bagulho ta doido!");
         user7.setFavouriteMusicians("Roberto Carlos");
         user7.setMusicGenre("Baladas Brasileiras");
 
-        user8.setUserFoto("");
+        user8.setUserFoto("https://i.imgur.com/9AIsz2G.jpg");
         user8.setId(8);
         user8.setUserName("user8");
         user8.setPassword("user8");
@@ -133,19 +133,19 @@ public class Bootstrap {
         user8.setFavouriteMusicians("David Bowie");
         user8.setMusicGenre("Orgy Music");
 
-        user9.setUserFoto("");
+        user9.setUserFoto("https://i.imgur.com/VBduTE4.jpg");
         user9.setId(9);
         user9.setUserName("user9");
         user9.setPassword("user9");
         user9.setFirstName("Mego");
         user9.setLastName("Santos");
         user9.setMusicExp(3);
-        user9.setInstrument("Triângulo");
+        user9.setInstrument("Saxofone");
         user9.setAboutMe("Hoje é dia de maldade");
         user9.setFavouriteMusicians("Dua Lipa");
         user9.setMusicGenre("Pop");
 
-        user10.setUserFoto("");
+        user10.setUserFoto("https://i.imgur.com/mP6zNEb.jpg");
         user10.setId(10);
         user10.setUserName("user10");
         user10.setPassword("user10");
@@ -157,7 +157,7 @@ public class Bootstrap {
         user10.setFavouriteMusicians("Breaking Benjamin");
         user10.setMusicGenre("Metal");
 
-        user11.setUserFoto("");
+        user11.setUserFoto("https://i.imgur.com/x7Io7gH.jpg");
         user11.setId(11);
         user11.setUserName("user11");
         user11.setPassword("user11");
@@ -169,7 +169,7 @@ public class Bootstrap {
         user11.setFavouriteMusicians("Ivete Sangalo");
         user11.setMusicGenre("Baladas");
 
-        user12.setUserFoto("");
+        user12.setUserFoto("https://i.imgur.com/XnyJipm.jpg");
         user12.setId(12);
         user12.setUserName("user12");
         user12.setPassword("user12");

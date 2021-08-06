@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <thymeleaf th:replace="header :: header"></thymeleaf>
 
@@ -84,48 +84,36 @@
 </nav>
 
 
-<div>
-    <div id=" imag">
+<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w780">
+        <div class="card card-3 teste2">
 
+            <div class="card-heading" img th:src="${user.userFoto}"></div>
+            <div class="card-body ">
+                <h1 class="title">Is this your next John Lennon?</h1>
+                <form>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="First Name" th:text="${user.firstName}"
+                               name="name">
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Last Name" th:field="*{user.lastName}"
+                               name="password">
+                    </div>
 
-        <img th:src="${user.userFoto}" style="justify-content: center;align-content: center">
-        <span>
-        <table class="table table-striped table-dark" style="background:black"  ;>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Music Experience"
+                               th:field="*{user.musicExp}"
+                               name="firstname">
+                    </div>
 
-            <tr>
-                <th>First Name</th>
-            <tr>
-                <td th:text="${user.firstName}"></td>
-            </tr>
-            <tr>
-                <th>Last Name</th>
-            <tr>
-                <td th:text="${user.lastName}"></td>
-            </tr>
-            <tr>
-                <th>Music experiences</th>
-            </tr>
-            <td th:text="${user.musicExp}"></td>
-            <tr>
-                <th>Musical instruments</th>
-            </tr>
-            <td th:text="${user.instrument}"></td>
-            <tr>
-                <th>About me</th>
-            </tr>
-            <td th:text="${user.aboutMe}"></td>
-            <tr>
-                <th>Phone</th>
-            </tr>
-            <td th:text="${user.phone}"></td>
-            <tr>
-                <th>Email</th>
-            </tr>
-            <td th:text="${user.email}"></td>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Musical Instruments"
+                               th:field="*{user.instrument}"
+                               name="name">
+                    </div>
 
-            </tr>
-        </table>
-                    <div class="container">
+                    <div class="p-t-10">
                         <span class="p-t-10">
                         <a href="http://localhost:8080/matchBeats/pagematch.html">
                             <button class="btn btn--pill btn--red" type="submit"
@@ -152,11 +140,16 @@
                         </span>
                     </div>
 
+            </div>
 
+        </div>
+
+
+    </div>
+</div>
+</div>
 
 
 </body>
+
 </html>
-
-
-

@@ -42,7 +42,7 @@ public class IndexController {
 
         }*/
 
-        int num = ((int) (Math.random() * 12) + 1);
+        int num = ((int) (Math.random() * 12));
 
 
         model.addAttribute("user",userService.getUsers().get(num));
@@ -55,6 +55,18 @@ public class IndexController {
     public String match() {
 
         return "/pagematch.html";
+
+    }
+    @RequestMapping(method = RequestMethod.GET, path = "/account")
+    public String matchacc() {
+
+        return "/account.html";
+
+    }
+    @RequestMapping(method = RequestMethod.GET, path = "/matches")
+    public String matchmat() {
+
+        return "/matches.html";
 
     }
 

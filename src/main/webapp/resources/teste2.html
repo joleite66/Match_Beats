@@ -58,19 +58,21 @@
 
         </ul>
     </div>
+
     <div class="mx-auto order-0" style="font-size: xxx-large">
         <h1 class="navbar-brand mx-auto" style="font-size: xx-large"><strong> Welcome </strong></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
+
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto" style="font-size: large">
             <li class="nav-item">
-                <a class="nav-link" href="#"> Account </a>
+                <a class="nav-link" href="account.html"> Account </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"> Matches </a>
+                <a class="nav-link" href="matches.html"> Matches </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"> Settings </a>
@@ -81,108 +83,80 @@
     </div>
 </nav>
 
-<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
-    <div class="wrapper wrapper--w780">
-        <div class="card card-3 ">
-            <img src="../img/logo2.png">
-            <div class="card-heading "></div>
-            <div class="card-body ">
-                <h1 class="title" style="justify-items:center">Is this your next John Lennon?</h1>
-                <table class= "table ">
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Music experiences</th>
-                        <th>Musical instruments</th>
-                        <th>About me</th>
-                        <th>Phone</th>
-                        <th>Email</th>
-                    </tr>
-                    <tr>
-                        <div class="input-group">
-                            <td th:text="${user.firstName}"></td>
-                        </div>
-                        <div class="input-group">
-                            <td th:text="${user.lastName}"></td>
-                        </div>
-                        <div class="input-group">
-                            <td th:text="${user.musicExp}"></td>
-                        </div>
-                        <div class="input-group">
-                            <td th:text="${user.instrument}"></td>
-                        </div>
-                        <div class="input-group">
-                            <td th:text="${user.aboutMe}"></td>
-                        </div>
-                        <div class="input-group">
-                            <td th:text="${user.phone}"></td>
-                        </div>
-                        <div class="input-group">
-                            <td th:text="${user.email}"></td>
-                        </div>
 
-                    </tr>
-                    <div class="input-group">
-                        <a class="input--style-3" type="text" placeholder="First Name" th:field="*{user.firstName}"
-                           name="name"></a>
+<div>
+    <div id=" imag">
 
 
-                    <div class="input-group">
-                        <a class="input--style-3" type="text" placeholder="Last Name" name="name"></a>
+        <img th:src="${user.userFoto}" style="justify-content: center;align-content: center">
+        <span>
+        <table class="table table-striped table-dark" style="background:black"  ;>
+
+            <tr>
+                <th>First Name</th>
+            <tr>
+                <td th:text="${user.firstName}"></td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+            <tr>
+                <td th:text="${user.lastName}"></td>
+            </tr>
+            <tr>
+                <th>Music experiences</th>
+            </tr>
+            <td th:text="${user.musicExp}"></td>
+            <tr>
+                <th>Musical instruments</th>
+            </tr>
+            <td th:text="${user.instrument}"></td>
+            <tr>
+                <th>About me</th>
+            </tr>
+            <td th:text="${user.aboutMe}"></td>
+            <tr>
+                <th>Phone</th>
+            </tr>
+            <td th:text="${user.phone}"></td>
+            <tr>
+                <th>Email</th>
+            </tr>
+            <td th:text="${user.email}"></td>
+
+            </tr>
+        </table>
+                    <div class="container">
+                        <span class="p-t-10">
+                        <a href="http://localhost:8080/matchBeats/pagematch.html">
+                            <button class="btn btn--pill btn--red" type="submit"
+                                    style="background-color:  rgb(255, 11, 11);"><img
+                                    src="http://localhost:8080/matchBeats/resources/img/match.png"
+                                    width="15%"> Match <img
+                                    src="http://localhost:8080/matchBeats/resources/img/match.png"
+                                    width="15%">
+                            </button> </a>
+                            </span>
+                        <span class="p-t-10">
+
+
+                        <form th:object="${user}" th:action="@{/app}" method="post">
+                            <button class="btn btn--pill btn--red"
+                                    style="background-color:  rgb(255, 11, 11);"><img
+                                    src="http://localhost:8080/matchBeats/resources/img/breakguitar.jpeg"
+                                    width="15%"> Unmatch <img
+                                    src="http://localhost:8080/matchBeats/resources/img/breakguitar.jpeg"
+                                    width="15%">
+                            </button>
+                        </form>
+
+                        </span>
                     </div>
 
-                    <div class="input-group">
 
-                    </div>
-                    <div class="input-group">
-                        <a class="input--style-3" type="email" placeholder="Music experiences" name="email"></a>
-                    </div>
-                    <div class="input-group">
-                        <a class="input--style-3" type="text" placeholder="Musical instruments"
-                           name="phone"></a>
-                    </div>
-                    <div class="input-group">
-                        <a class="input--style-3" type="text" placeholder="About me" name="name"></a>
-                        <div class="input-group">
-                            <a class="input--style-3" type="text" placeholder="Phone" name="phone"></a>
-                        </div>
-                        <div class="input-group">
-                            <a class="input--style-3" type="email" placeholder="Email" name="email"></a>
-                        </div>
-                        <scan class="red-buttons">
-                            <div class="p-t-10">
-                                <form th:object="${user}" th:action="@{/app}" method="post">
-                                <button class="btn btn--pill btn--red"
-                                        style="background-color:  rgb(255, 11, 11);"><img
-                                        src="http://localhost:8080/matchBeats/resources/img/breakguitar.jpeg"
-                                        width="15%"> Unmatch <img
-                                        src="http://localhost:8080/matchBeats/resources/img/breakguitar.jpeg"
-                                        width="15%">
-                                </button>
-                                </form>
-                            </div>
-                            <div class="p-t-10">
-                                <a href="http://localhost:8080/matchBeats/pagematch.html"><button class="btn btn--pill btn--red" type="submit"
-                                        style="background-color:  rgb(255, 11, 11);"><img
-                                        src="http://localhost:8080/matchBeats/resources/img/match.png"
-                                        width="15%"> Match <img
-                                        src="http://localhost:8080/matchBeats/resources/img/match.png" width="15%">
-                                </button></a>
 
-                            </div>
-                        </scan>
-
-                    </div>
-                </table>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="about-us">
-    <a class="nav-link" href="aboutUs.html" style="font-size: large; color: #d6d6d6; justify-content: center; align-content: center"> About Us </a>
-</div>
 
 </body>
 </html>
+
+
+

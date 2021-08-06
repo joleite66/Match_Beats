@@ -41,6 +41,9 @@ body {
 
 
 .p-t-10 {
+    display: inline-flex;
+    border-color: black;
+    justify-content: space-around;
     padding-top: 10px;
     width: 40%;
 }
@@ -208,7 +211,6 @@ input {
 }
 
 .card-3 .card-heading {
-    background: url("../img/logo2.png") top left/cover no-repeat;
     display: table-cell;
     width: 50%;
 }
@@ -261,5 +263,12 @@ input {
         position: absolute;
         top: 10%;
         left: 35%;
+    }
+
+    .table{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
     }
 }

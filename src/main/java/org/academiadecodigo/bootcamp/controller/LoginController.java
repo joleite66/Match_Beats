@@ -44,7 +44,7 @@ public class LoginController {
 
         if (loginService.login(user.getUserName(), user.getPassword())) {
 
-            int num = ((int) (Math.random() * 12) +1);
+            int num = ((int) (Math.random() * 12));
 
 
             model.addAttribute("user",userService.getById(num));
