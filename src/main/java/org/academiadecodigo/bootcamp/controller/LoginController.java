@@ -24,8 +24,9 @@ public class LoginController {
 
     @RequestMapping(method = RequestMethod.GET, path = {"/login", "/",""})
     public String showLogin() {
-        return "login.html"; //return login view;
+        return "teste2.html"; //return login view;
     }
+
 
     @RequestMapping(method = RequestMethod.GET, path = {"/login/{username}/{password}"})
     public String execLogin(@PathVariable String username, @PathVariable String password){
