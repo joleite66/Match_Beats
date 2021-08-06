@@ -8,6 +8,7 @@ import java.util.List;
 public class User {
 
     private int id;
+    private String userFoto;
     private String userName;
     private String password;
     private String firstName;
@@ -18,9 +19,9 @@ public class User {
     private int phone;
     private String email;
 
-    private List<String> favouriteMusicians = new ArrayList<>();
-    private List<String> musicGenre = new ArrayList<>();
-    private List<Integer> likedIDs = new ArrayList<>();
+    private String favouriteMusicians;
+    private String musicGenre;
+    private String likedIDs;
 
     private Matcher matcher;
     private boolean isLogin;
@@ -118,28 +119,37 @@ public class User {
         this.matcher = matcher;
     }
 
-    public List<String> getFavouriteMusicians() {
+    public String getFavouriteMusicians() {
         return favouriteMusicians;
     }
 
-    public void setFavouriteMusicians(List<String> favouriteMusicians) {
+    public void setFavouriteMusicians(String favouriteMusicians) {
         this.favouriteMusicians = favouriteMusicians;
     }
 
-    public List<String> getMusicGenre() {
+    public String getMusicGenre() {
         return musicGenre;
     }
 
-    public void setMusicGenre(List<String> musicGenre) {
+    public void setMusicGenre(String musicGenre) {
         this.musicGenre = musicGenre;
     }
 
-    public List<Integer> getLikedIDs() {
+    public String getLikedIDs() {
         return likedIDs;
     }
 
-    public void setLikedIDs(List<Integer> likedIDs) {
+    public void setLikedIDs(String likedIDs) {
         this.likedIDs = likedIDs;
+    }
+
+
+    public String getUserFoto() {
+        return userFoto;
+    }
+
+    public void setUserFoto(String userFoto) {
+        this.userFoto = userFoto;
     }
 
     @Override

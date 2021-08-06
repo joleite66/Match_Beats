@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<thymeleaf th:replace="header :: header"></thymeleaf>
 
-<head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
 
-    <!-- Title Page-->
-    <title>Au Register Forms by Colorlib</title>
+<head xmlns:th="http://www.w3.org/1999/xhtml">
 
-    <!-- Icons font CSS-->
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet">
+    <thymeleaf xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+               th:fragment="header" th:remove="tag">
 
-    <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+        <title>MatchBeats</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+              modelType="text/css"/>
+        <script modelType="application/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script modelType="application/javascript" async
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <!-- Main CSS-->
-    <link href="http://localhost:8080/matchBeats/resources/css/main2.css" rel="stylesheet" media="all">
-</head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Colorlib Templates">
+        <meta name="author" content="Colorlib">
+        <meta name="keywords" content="Colorlib Templates">
+
+        <!-- Title Page-->
+        <title>Register User</title>
+
+        <!-- Icons font CSS-->
+        <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <!-- Font special for pages-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+              rel="stylesheet">
+
+        <!-- Vendor CSS-->
+        <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+        <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+        <!-- Main CSS-->
+        <link href="http://localhost:8080/matchBeats/resources/css/main2.css" rel="stylesheet" media="all">
+        </head>
 
 <body>
 <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
@@ -34,20 +49,24 @@
             <div class="card-heading test"></div>
             <div class="card-body ">
                 <h1 class="title">Register</h1>
-                <form method="POST">
+                <form th:object="${user}" th:action="@{/register.html}" method="post">
                     <div class="input-group">
-                        <input class="input--style-3" type="text" placeholder="Username" name="name">
+                        <input class="input--style-3" type="text" placeholder="Username" th:field="*{userName}"
+                               name="name">
                     </div>
                     <div class="input-group">
-                        <input class="input--style-3" type="text" placeholder="Password" name="name">
-                    </div>
-
-                    <div class="input-group">
-                        <input class="input--style-3" type="text" placeholder="First Name" name="name">
+                        <input class="input--style-3" type="text" placeholder="Password" th:field="*{password}"
+                               name="password">
                     </div>
 
                     <div class="input-group">
-                        <input class="input--style-3" type="text" placeholder="Last Name" name="name">
+                        <input class="input--style-3" type="text" placeholder="First Name" th:field="*{firstName}"
+                               name="firstname">
+                    </div>
+
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Last Name" th:field="*{lastName}"
+                               name="name">
                     </div>
 
                     <div class="input-group">
@@ -55,29 +74,32 @@
 
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Music experinces" name="email">
+                            <input class="input--style-3" type="text" placeholder="Music experinces"
+                                   th:field="*{musicExp}" name="email">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Musical instruments" name="phone">
+                            <input class="input--style-3" type="text" placeholder="Musical instruments"
+                                   th:field="*{instrument}" name="text">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="About me" name="name">
+                            <input class="input--style-3" type="text" placeholder="About me" th:field="*{aboutMe}"
+                                   name="name">
                         </div>
 
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                            <input class="input--style-3" type="text" placeholder="Phone" th:field="*{phone}"
+                                   name="phone">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Email" name="email">
+                            <input class="input--style-3" type="text" placeholder="Email" th:field="*{email}"
+                                   name="email">
                         </div>
                         <div class="p-t-10">
+                            <button class="btn btn--pill btn--green" type="submit">Submit
+                            </button>
                             <a href="http://localhost:8080/matchBeats/resources/login.html">
-                                <button class="btn btn--pill btn--green" type="submit">Submit
-                                </button></a>
-
-                                <a href="http://localhost:8080/matchBeats/resources/login.html">
-                                    <button class="btn btn--pill btn--green" type="button">Cancel</button>
-                                </a>
+                                <button class="btn btn--pill btn--green" type="button">Cancel</button>
+                            </a>
                         </div>
 
                     </div>

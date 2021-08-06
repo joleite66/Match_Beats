@@ -525,3 +525,19 @@ input {
     padding-bottom: 45px;
   }
 }
+
+/* ==========================================================================
+   #ABOUT US
+   ========================================================================== */
+
+.about-us {
+  color: #d6d6d6;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-link {
+  color: #d6d6d6;
+  justify-content: center;
+  align-content: center;
+}

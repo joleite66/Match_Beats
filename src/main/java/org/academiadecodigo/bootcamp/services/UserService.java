@@ -30,7 +30,7 @@ public class UserService {
 
         for (User user: users) {
 
-            if(user.getId() == id) {
+            if (user.getId() == id) {
                 return user;
             }
 
@@ -38,9 +38,8 @@ public class UserService {
         return null;
     }
 
-    public User addUser() {
-        //adds a user to the data base
-        return new User();
+    public void addUser(User user) {
+        users.add(user);
     }
 
     public void editUser() {

@@ -21,13 +21,15 @@ public class LoginService {
 
         for (User user : users) {
 
-            if (user.getUserName().equals(username)) {
+            if (!user.getUserName().equals(username)) {
+                continue;
+
+            } else {
                 if (user.getPassword().equals(password)) {
                     return true;
                 }
                 return false;
             }
-            return false;
         }
         return false;
     }
